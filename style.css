@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+:root {
+	--poppins: 'Poppins', sans-serif;
+	--lato: 'Lato', sans-serif;
+
+	--light: #F9F9F9;
+	--blue: #3C91E6;
+	--light-blue: #CFE8FF;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--dark: #342E37;
+	--red: #DB504A;
+	--yellow: #FFCE26;
+	--light-yellow: #FFF2C6;
+	--orange: #FD7238;
+	--light-orange: #FFE0D3;
+}
+
+html {
+	overflow-x: hidden;
+  font-family: var(--lato);
+}
+body{
+  background: var(--grey);
+}
+/* 
+SIDEBAR
+*/
+.side-bar{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  background: var(--light);
+  height: 100%;
+  z-index: 1000;
+}
+.side-bar .admin-logo{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 15px;
+  font-size: 20px;
+  
+}
+.side-bar .admin-logo a{
+  text-decoration: none;
+  color: var(--dark);
+}
+.side-menu ul li{
+  
+  height: 36px;
+  background: transparent;
+  margin-left: 10px;
+  border-radius: 48px 0 0 48px;
+  padding: 4px;
+  margin-bottom: 5px;
+}
+.admin-logo .text{
+  font-size: 20px;
+}
+.side-menu ul li a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--light);
+  white-space: nowrap;
+  border-radius: 48px;
+  overflow-x: hidden;
+  padding-left: 6px;
+  text-decoration: none;
+  color: var(--dark);
+}
+.side-menu ul li a:hover{
+  background: var(--light-blue);
+}
+.side-menu ul li a span{
+  margin-left: 5px;
+}
+.side-menu{
+  margin-bottom: 50px;
+}
+.bx.bx-chevron-down{
+  position: relative;
+  left: 100px;
+  font-size: 20px;
+}
+ .text{
+  font-size: 15px;
+ }
+.logout{
+  color: var(--red);
+}
+.header{
+  background: var(--light);
+  height: 80px;
+  position: relative;
+  top: 0;
+  width: calc(100% - 280px);
+  left: 280px;
+  display: flex;
+  align-items: center;
+  grid-gap: 24px;
+  font-size: 26px;
+  cursor: pointer;
+}
+.header img{
+  height: 50px;
+  width: 50px;
+  background: var(--dark);
+  border-radius: 50%;
+  
+}
+.right-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-left: auto;
+  margin-right: 100px;
+}
+.side-menu ul li .bx{
+  font-size: 20px;
+}
+.sub-menu.hidden{
+  display: none;
+ 
+}
+
+.side-menu ul li a.active{
+  background-color: var(--light-blue);
+}
